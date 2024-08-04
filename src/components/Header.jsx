@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { RiMenu3Fill, RiCloseLargeLine  } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -10,16 +11,17 @@ const Header = () => {
       };
   return (
     <header>
-      <h1 className="logo">huka</h1>
+      <Link to="/" className="logo">huka</Link>
       <nav className={`navbar ${isOpen && 'open'}`}>
         <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Venue</a></li>
-            <li><a href="#">Online Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><Link to="/About">About Us</Link></li>
+            <li><Link to="/menu">Menu</Link></li>
+            <li><Link to="/venue">Venue</Link></li>
+            <li><Link to="/shop">Online Shop</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
         </ul>
+        <a href="#" className="bookTable">book a table</a>
       </nav>
       <div className="toggleBtn" onClick={toggleIcon}>
       {isOpen ? <RiCloseLargeLine className="Icon" /> : <RiMenu3Fill className="Icon" />}
