@@ -1,5 +1,4 @@
 header {
-  background: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,6 +65,7 @@ header {
   header {
     align-items: center;
     justify-content: space-between;
+    background-color: #000;
     nav {
       position: absolute;
       top: 100%;

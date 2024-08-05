@@ -1,0 +1,14 @@
+.btn {
+  border: 1px solid #30fdff;
+  box-shadow: 0px 4px 0px 0px rgba(148, 226.99999999999997, 255, 0);
+  padding: 15px 45px;
+  color: #30fdff;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 15px 0;
+  &:hover {
+    color: #000;
+    background-color: #30fdff;
+  }
+}
