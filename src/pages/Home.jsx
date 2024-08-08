@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
+import AboutCard from "../components/AboutCard";
 const Home = () => {
   return (
     <div>
@@ -23,6 +24,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="cardContainer">
+        <AboutCard />
       </div>
     </div>
   );

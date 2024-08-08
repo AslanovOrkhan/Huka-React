@@ -21,7 +21,7 @@ const Header = () => {
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
         </ul>
-        <a href="#" className="bookTable">book a table</a>
+        <Link to="/" className="bookTable">book a table</Link>
       </nav>
       <div className="toggleBtn" onClick={toggleIcon}>
       {isOpen ? <RiCloseLargeLine className="Icon" /> : <RiMenu3Fill className="Icon" />}
