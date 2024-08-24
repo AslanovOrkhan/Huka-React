@@ -26,10 +26,22 @@ const Home = () => {
         </div>
       </div>
       <div className="ShishaTasts">
-        <ShishaTasts image={require("../assets/oerugbjrg-242x300.png")} />
-        <ShishaTasts image={require("../assets/pi3u5htvt-242x300.png")} />
-        <ShishaTasts image={require("../assets/9urehgb9rg-242x300.png")} />
-        <ShishaTasts image={require("../assets/rughbrg-242x300.png")} />
+        <ShishaTasts
+          image={require("../assets/oerugbjrg.png")}
+          title="Double Apple"
+        />
+        <ShishaTasts
+          image={require("../assets/9urehgb9rg.png")}
+          title="Orange mint"
+        />
+        <ShishaTasts
+          image={require("../assets/pi3u5htvt.png")}
+          title="Kiwi mint"
+        />
+        <ShishaTasts
+          image={require("../assets/rughbrg.png")}
+          title="Fruit mix"
+        />
       </div>
     </div>
   );
