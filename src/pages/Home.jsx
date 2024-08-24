@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
-import AboutCard from "../components/AboutCard";
+import ShishaTasts from "../components/ShishaTasts";
 const Home = () => {
   return (
     <div>
@@ -25,8 +25,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="cardContainer">
-        <AboutCard />
+      <div className="ShishaTasts">
+        <ShishaTasts image={require("../assets/oerugbjrg-242x300.png")} />
+        <ShishaTasts image={require("../assets/pi3u5htvt-242x300.png")} />
+        <ShishaTasts image={require("../assets/9urehgb9rg-242x300.png")} />
+        <ShishaTasts image={require("../assets/rughbrg-242x300.png")} />
       </div>
     </div>
   );

@@ -78,6 +78,11 @@
   }
 }
 
+.ShishaTasts {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 @media (max-width: 1200px) {
   .homeContainer {
     justify-content: center;
@@ -97,6 +102,9 @@
       }
     }
   }
+  .AboutContainer {
+    padding: 3.2rem 2%;
+  }
 }
 @media (max-width: 991px) {
   .homeContainer {
@@ -115,10 +123,16 @@
       }
     }
   }
+  .ShishaTasts {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 768px) {
   .homeContainer {
     align-items: center;
+  }
+  .ShishaTasts {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 576px) {
@@ -136,6 +150,9 @@
         font-size: 15px;
       }
     }
+  }
+  .ShishaTasts {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 450px) {
@@ -159,7 +176,7 @@
           h2 {
             font-size: 50px;
           }
-          p{
+          p {
             font-size: 10px;
           }
         }
