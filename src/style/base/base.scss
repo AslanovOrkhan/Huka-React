@@ -16,3 +16,11 @@ li {
 body {
   background: #000;
 }
+.container{
+  padding: 3.8rem 12%;
+}
+@media (max-width:991px) {
+  .container{
+    padding: 2.5rem 5%;
+  }
+}

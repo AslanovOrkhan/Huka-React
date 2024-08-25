@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 import ShishaTasts from "../components/ShishaTasts";
+import CustomerCommentCard from "../components/CustomerCommentCard";
 const Home = () => {
   return (
     <div>
@@ -42,6 +43,32 @@ const Home = () => {
           image={require("../assets/rughbrg.png")}
           title="Fruit mix"
         />
+      </div>
+      <div className="ClientThink container">
+        <div className="BgImage">
+          <img src={require("../assets/ryheryj.png")} alt="" />
+        </div>
+        <div className="title">
+          <h4>Testimonials</h4>
+          <span>What People Think About Us</span>
+        </div>
+        <div className="CommentCardItem">
+          <CustomerCommentCard
+            image={require("../assets/riyxgd.png")}
+            name="Zoe Jim"
+          />
+          <CustomerCommentCard
+            image={require("../assets/oeuhr.png")}
+            name="Mark Rojers"
+          />
+          <CustomerCommentCard
+            image={require("../assets/u3y4g.png")}
+            name="James Swan"
+          />
+        </div>
+        <div className="BgRightImage">
+          <img src={require("../assets/5yhu5yh.png")} alt="" />
+        </div>
       </div>
     </div>
   );
