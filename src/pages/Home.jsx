@@ -44,6 +44,26 @@ const Home = () => {
           title="Fruit mix"
         />
       </div>
+      <div className="ProductContainer">
+        <div className="product-item">
+          <img src={require("../assets/i5v6h-1.png")} alt="" />
+        </div>
+        <div className="product-item">
+          <img src={require("../assets/4uyvh6i46v.png")} alt="" />
+        </div>
+        <div className="product-item">
+          <img src={require("../assets/i34u6hv.png")} alt="" />
+        </div>
+        <div className="product-item">
+          <img src={require("../assets/3y5gcui3.png")} alt="" />
+        </div>
+        <div className="product-item">
+          <img src={require("../assets/5y3ug5c.png")} alt="" />
+        </div>
+        <div className="product-item">
+          <img src={require("../assets/t4cfyc.png")} alt="" />
+        </div>
+      </div>
       <div className="ClientThink container">
         <div className="BgImage">
           <img src={require("../assets/ryheryj.png")} alt="" />
