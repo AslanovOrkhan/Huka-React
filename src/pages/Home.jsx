@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 import ShishaTasts from "../components/ShishaTasts";
 import CustomerCommentCard from "../components/CustomerCommentCard";
+import AboutCard from "../components/AboutCard";
 const Home = () => {
   return (
     <div>
@@ -25,6 +26,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container">
+        <AboutCard />
       </div>
       <div className="ShishaTasts">
         <ShishaTasts

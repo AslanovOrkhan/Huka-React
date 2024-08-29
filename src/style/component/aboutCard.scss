@@ -1,0 +1,74 @@
+.aboutCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+  .aboutImage {
+    flex: 1;
+    max-height: 530px;
+    overflow: hidden;
+    margin-right: 35px;
+    img {
+      width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    margin-left: 30px;
+    h3 {
+      color: #30fdff;
+      font-family: "Cherish", Sans-serif;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 1.2em;
+    }
+    span {
+      color: #ffffff;
+      font-family: "Montserrat Alternates", Sans-serif;
+      font-size: 46px;
+      font-weight: 500;
+      line-height: 1.2em;
+    }
+    p {
+      color: #c6c6c6;
+      font-family: "Work Sans", Sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6em;
+      padding-right: 45px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutCardContainer {
+    flex-direction: column;
+    .aboutImage {
+      margin-right: 0;
+    }
+    .content {
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+      h3 {
+        text-align: center;
+        font-size: 42px;
+      }
+      span {
+        text-align: center;
+        font-size: 42px;
+      }
+      p {
+        text-align: center;
+        padding-right: 0px;
+      }
+    }
+  }
+}
