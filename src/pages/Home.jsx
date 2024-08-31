@@ -4,6 +4,7 @@ import ShishaTasts from "../components/ShishaTasts";
 import CustomerCommentCard from "../components/CustomerCommentCard";
 import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
+import Reserve from "../components/Reserve";
 const Home = () => {
   return (
     <div>
@@ -55,6 +56,9 @@ const Home = () => {
           title="Fruit mix"
         />
       </div>
+      <div className="Reservecontainer">
+        <Reserve />
+      </div>
       <div className="ProductContainer">
         <div className="product-item">
           <img src={require("../assets/i5v6h-1.png")} alt="" />
@@ -75,6 +79,7 @@ const Home = () => {
           <img src={require("../assets/t4cfyc.png")} alt="" />
         </div>
       </div>
+
       <div className="ClientThink container">
         <div className="BgImage">
           <img src={require("../assets/ryheryj.png")} alt="" />
