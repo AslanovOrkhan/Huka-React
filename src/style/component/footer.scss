@@ -1,0 +1,32 @@
+footer {
+  border-top: 0.1px solid #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 8%;
+  .content {
+    color: #9097aa;
+    font-size: 17px;
+    line-height: 1.7rem;
+    letter-spacing: 0.5px;
+  }
+  p {
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 991px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem 15%;
+
+    .content {
+      order: 1;
+      text-align: center;
+    }
+  }
+}
