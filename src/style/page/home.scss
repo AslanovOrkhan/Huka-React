@@ -78,6 +78,35 @@
     }
   }
 }
+.AboutEnvironment {
+  position: relative;
+  .bgLeftImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 241px;
+    max-height: 200px;
+    z-index: -1;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+  .bgRightImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 241px;
+    height: 330px;
+    z-index: -1;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+}
 .ShishaTasts {
   padding: 3rem 0;
   display: grid;

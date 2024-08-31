@@ -28,8 +28,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container AboutEnvironment">
+        <div className="bgLeftImage">
+          <img src={require("../assets/u3t4ybgt4.png")} alt="" />
+        </div>
         <AboutCard />
+        <div className="bgRightImage">
+          <img src={require("../assets/43ut8hgt4.png")} alt="" />
+        </div>
       </div>
       <div className="ShishaTasts">
         <ShishaTasts
