@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Venue = () => {
-  return (
-    <div><h1>Venue</h1></div>
-  )
-}
+  return <div></div>;
+};
 
-export default Venue
+export default Venue;

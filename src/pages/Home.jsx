@@ -5,6 +5,7 @@ import CustomerCommentCard from "../components/CustomerCommentCard";
 import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
 import Reserve from "../components/Reserve";
+import LocationInfo from "../components/LocationInfo";
 const Home = () => {
   return (
     <div>
@@ -104,6 +105,9 @@ const Home = () => {
         <div className="BgRightImage">
           <img src={require("../assets/5yhu5yh.png")} alt="" />
         </div>
+      </div>
+      <div className="LocationContainer">
+        <LocationInfo />
       </div>
       <div className="footer">
         <Footer />

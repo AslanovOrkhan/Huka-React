@@ -1,0 +1,153 @@
+.LocationInfo {
+  background-image: url(../../assets/r9e8gyer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    background-image: linear-gradient(180deg, #09090b 0%, #09090b 100%);
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    h3 {
+      color: #30fdff;
+      font-family: "Cherish", Sans-serif;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 1.2em;
+    }
+    span {
+      color: #ffffff;
+      font-family: "Montserrat Alternates", Sans-serif;
+      font-size: 46px;
+      font-weight: 500;
+      line-height: 1.2em;
+      letter-spacing: -1.5px;
+    }
+    p {
+      color: #c6c6c6;
+      font-family: "DM Sans", Sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.6em;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 6rem;
+    .map {
+      width: 50%;
+      height: 425px;
+      position: relative;
+      iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.9;
+        border: none;
+        outline: none;
+        cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+      }
+    }
+    .OpeningHours {
+      border: 2px solid #30fdff;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 35px;
+      padding: 30px;
+      width: 50%;
+      .title {
+        color: #ffffff;
+        font-family: "Montserrat Alternates", Sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5px;
+      }
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+
+          span {
+            font-family: "Work Sans", Sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .LocationInfo {
+    .title {
+      h3 {
+        text-align: center;
+        font-size: 45px;
+      }
+      span {
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        text-align: center;
+        padding: 0 12px;
+      }
+    }
+    .content {
+      flex-direction: column;
+      align-items: center;
+      .map {
+        width: 100%;
+        order: 2;
+
+      }
+      .OpeningHours {
+        width: 100%;
+        padding: 20px;
+        order: 1;
+        .title {
+          font-size: 35px;
+          padding-bottom: 10px;
+        }
+        ul {
+          li {
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
