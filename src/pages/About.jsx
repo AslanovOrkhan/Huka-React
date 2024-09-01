@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageInfo from "../components/PageInfo";
 
 const About = () => {
   return (
-    <div><h1>About</h1></div>
-  )
-}
+    <div>
+      <PageInfo />
+    </div>
+  );
+};
 
-export default About
+export default About;

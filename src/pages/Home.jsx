@@ -79,7 +79,6 @@ const Home = () => {
           <img src={require("../assets/t4cfyc.png")} alt="" />
         </div>
       </div>
-
       <div className="ClientThink container">
         <div className="BgImage">
           <img src={require("../assets/ryheryj.png")} alt="" />
