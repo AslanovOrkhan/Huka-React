@@ -19,13 +19,13 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 1.1rem;
-    max-width: 36%;
+    max-width: 39%;
     margin-left: 14rem;
     padding-bottom: 90px;
     h4 {
       text-align: left;
       color: #30fdff;
-      font-family: "Cherish", sans-serif;
+      font-family: "Cherish", Sans-serif;
       font-size: 45px;
       line-height: 1.2em;
       font-weight: 500;
@@ -61,6 +61,7 @@
           font-size: 62px;
           font-weight: 500;
           line-height: 1;
+          font-family: "Work Sans", Sans-serif;
         }
         p {
           color: #aeaeae;
@@ -114,6 +115,8 @@
 }
 .Reservecontainer {
   margin: 100px 0;
+}
+.MenuContainer {
 }
 .ClientThink {
   display: flex;
@@ -212,9 +215,7 @@
     }
   }
 }
-// .LocationContainer {
- 
-// }
+
 @media (max-width: 1200px) {
   .homeContainer {
     justify-content: center;

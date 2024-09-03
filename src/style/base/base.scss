@@ -1,11 +1,11 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: 0.5s;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Cherish";
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Cherish";
 }
 a {
   text-decoration: none;
@@ -16,11 +16,11 @@ li {
 body {
   background: #000;
 }
-.container{
+.container {
   padding: 4rem 12%;
 }
-@media (max-width:991px) {
-  .container{
+@media (max-width: 991px) {
+  .container {
     padding: 2.5rem 5%;
   }
 }
