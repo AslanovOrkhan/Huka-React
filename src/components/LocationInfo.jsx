@@ -15,7 +15,7 @@ const LocationInfo = () => {
         <div className="content">
           <div className="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6064073197!2d-0.43123970044350396!3d51.52860701956136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2zTG9uZG9uLCBCaXJsyZnFn21pxZ8gS3JhbGzEsXE!5e0!3m2!1saz!2saz!4v1725190280459!5m2!1saz!2saz"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24314.60114355638!2d49.959146737524605!3d40.37948586450815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030649b906e4d39%3A0x5bf31674360301e!2zWWVuaSBHw7xuyZnFn2xpLCBCYWvEsQ!5e0!3m2!1saz!2saz!4v1729196702880!5m2!1saz!2saz"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>

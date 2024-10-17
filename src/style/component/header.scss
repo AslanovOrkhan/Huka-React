@@ -26,11 +26,29 @@ header {
       align-items: center;
       gap: 30px;
       li {
+        position: relative;
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 5%;
+          background-color: #30fdff;
+          transition: 0.6s;
+        }
+        padding: 0.3rem 0;
         a {
           color: #fff;
           font-weight: 500;
           font-size: 17px;
           line-height: 19px;
+          padding: 1rem 0;
           &:hover {
             color: #30fdff;
           }
@@ -62,7 +80,7 @@ header {
     }
   }
 }
-header.scrolled{
+header.scrolled {
   background-color: #000;
 }
 @media (max-width: 1024px) {
@@ -78,15 +96,17 @@ header.scrolled{
       background-color: #000;
       transition: 0.3s;
       flex-direction: column;
-      align-items: end;
+      align-items: center;
       padding: 2rem 1.5rem 2rem 2rem;
       ul {
         flex-direction: column;
-        align-items: end;
+        align-items: center;
+        gap: 15px;
         li {
           a {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 600;
+            padding: 0;
           }
         }
       }

@@ -9,19 +9,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 115vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: start;
+  min-height: 100vh;
   border-bottom: 0.5px solid #272727;
+  position: relative;
   .homeText {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1.1rem;
     max-width: 39%;
-    margin-left: 14rem;
-    padding-bottom: 90px;
+    position: absolute;
+    top: 85%;
+    left: 27%;
+    transform: translate(-27%, -85%);
     h4 {
       text-align: left;
       color: #30fdff;
@@ -115,8 +115,6 @@
 }
 .Reservecontainer {
   margin: 100px 0;
-}
-.MenuContainer {
 }
 .ClientThink {
   display: flex;
@@ -218,21 +216,42 @@
 
 @media (max-width: 1200px) {
   .homeContainer {
-    justify-content: center;
     .homeText {
-      max-width: 60%;
-      margin: 0 auto;
       align-items: center;
-      justify-content: center;
-      padding-bottom: 10px;
+      min-width: 59%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       h4 {
         text-align: center;
+        line-height: 1em;
       }
       h2 {
         text-align: center;
+        font-size: 60px;
+        line-height: 1em;
       }
       span {
         text-align: center;
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+      .count {
+        gap: 30px;
+        div {
+          gap: 15px;
+          h2 {
+            font-size: 50px;
+          }
+          p {
+            font-size: 10px;
+            letter-spacing: 1px;
+          }
+        }
+        div:last-child {
+          padding-left: 30px;
+          border-left: 1px solid #c6c6c6;
+        }
       }
     }
   }
@@ -241,6 +260,11 @@
   }
 }
 @media (max-width: 991px) {
+  .homeContainer {
+    .homeText {
+      min-width: 75%;
+    }
+  }
   .aboutCardContainer {
     flex-direction: column;
     .content {
@@ -259,39 +283,27 @@
       }
     }
   }
-  .homeContainer {
-    .homeText {
-      max-width: 65%;
-      align-items: center;
-      justify-content: center;
-      h4 {
-        font-size: 45px;
-      }
-      h2 {
-        font-size: 60px;
-      }
-      span {
-        font-size: 15px;
-      }
-    }
-  }
+
   .ShishaTasts {
     grid-template-columns: repeat(3, 1fr);
   }
-  .ClientThink {
-    .CommentCardItem {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-  }
+  // .ClientThink {
+  //   .CommentCardItem {
+  //     grid-template-columns: repeat(2, 1fr);
+  //     gap: 10px;
+  //   }
+  // }
   .ProductContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
   .homeContainer {
-    align-items: center;
+    .homeText {
+      min-width: 85%;
+    }
   }
+
   .ShishaTasts {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -308,23 +320,6 @@
   }
 }
 @media (max-width: 576px) {
-  .homeContainer {
-    .homeText {
-      max-width: 90%;
-      margin: 0 auto;
-      padding-bottom: 0;
-
-      h4 {
-        font-size: 37px;
-      }
-      h2 {
-        font-size: 50px;
-      }
-      span {
-        font-size: 15px;
-      }
-    }
-  }
   .ShishaTasts {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -332,36 +327,14 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
-}
-@media (max-width: 450px) {
-  .homeContainer {
-    align-items: center;
-    .homeText {
-      max-width: 95%;
-      h4 {
-        font-size: 37px;
-      }
-      h2 {
-        font-size: 40px;
-      }
+  .ClientThink {
+    .BgImage {
+      top: 0%;
+      max-width: 7rem;
+     }
+    .title {
       span {
-        font-size: 12px;
-      }
-      .count {
-        flex-direction: column;
-        gap: 15px;
-        div {
-          h2 {
-            font-size: 50px;
-          }
-          p {
-            font-size: 10px;
-          }
-        }
-        div:last-child {
-          padding-left: 0;
-          border-left: none;
-        }
+        font-size: 45px;
       }
     }
   }

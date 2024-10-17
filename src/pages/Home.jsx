@@ -36,7 +36,6 @@ const Home = () => {
           <img src={require("../assets/u3t4ybgt4.png")} alt="" />
         </div>
         <AboutCard />
-        <AboutCard />
         <div className="bgRightImage">
           <img src={require("../assets/43ut8hgt4.png")} alt="" />
         </div>
@@ -61,9 +60,6 @@ const Home = () => {
       </div>
       <div className="Reservecontainer">
         <Reserve />
-      </div>
-      <div className="MenuContainer container">
-        <Menu />
       </div>
       <div className="ProductContainer">
         <div className="product-item">

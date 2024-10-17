@@ -7,8 +7,23 @@
   font-weight: 600;
   display: inline-block;
   margin: 15px 0;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background: #30fdff;
+    z-index: -1;
+    transition: 0.6s;
+  }
   &:hover {
     color: #000;
-    background-color: #30fdff;
+    &::before {
+      width: 100%;
+    }
   }
 }
